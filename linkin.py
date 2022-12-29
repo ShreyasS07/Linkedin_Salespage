@@ -116,7 +116,6 @@ def direct_html():
     df0 = pd.json_normalize(values)
     return df0
 
-
 def Leads_data():
 
     count = 12
@@ -140,9 +139,6 @@ def Leads_data():
     Excel = 'LinkedIn.xlsx'
     final_df.to_excel(Excel)
 
-
-
-
 window = Tk()
 window.title(" LogIn for LinkedIn using Web Scrapping ")
 window.geometry('600x100')
@@ -164,3 +160,5 @@ button_exit.grid(column=1, row=2)
 Leads.grid(column=1,row=3)
 page1.grid(column=1, row=4)
 window.mainloop()
+
+
