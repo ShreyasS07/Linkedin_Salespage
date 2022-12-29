@@ -42,7 +42,6 @@ def start():
             break
 
 def direct_html():
-    # driver.get('file:///C:/Users/ASUS/PycharmProjects/pythonProject/test_table.html')
     n1 = driver.find_elements(By.TAG_NAME, "table")
     #print("...........table starts here..............")
     for table in n1:
@@ -74,16 +73,8 @@ def direct_html():
                             Name = C_name[0]
                         except:
                             Name = C_name
-                        # links = dt.find_elements(By.TAG_NAME, 'a')
-                        # print('links elements')
-                        # print(links)
-                        # for lin in links:
-                        #     link = lin.get_attribute('href')
-                        #     print("Printing Links")
-                        #     print(link)
                     row[head_name] = dt.text
                     index_no += 1
-                    # values.append(row)
                     #Getting the clients links
                 #for dt in d4:
                 link = 'Null'
@@ -98,12 +89,6 @@ def direct_html():
                 row['Profile_link'] = link
 
                 values.append(row)
-
-                    # for lin in links:
-                    #     link = lin.get_attribute('href')
-                    #     print("Printing Links")
-                    #     print(link)
-                    #     break
         print('values')
         print(values)
         # for dl in dt:
